@@ -1,0 +1,242 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Time New Roman";
+  color: darkturquoise;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav-links,
+.cart,
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+.nav-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-link {
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.cart {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  min-height: 80vh;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cover img {
+  height: 60vh;
+  -webkit-filter: drop-shadow(0px 5px 3px black);
+          filter: drop-shadow(0px 5px 3px black);
+  -webkit-animation: drop 1.5s ease;
+          animation: drop 1.5s ease;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 100;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 100;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.introduction {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-selection {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+.cta-add {
+  border: none;
+  background: #c36cbb;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  margin-left: 0.5em;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.mid-circle {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  z-index: -1;
+  opacity: 2;
+}
+
+.small-circle {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+.select-laptop {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: 27%;
+  top: 77%;
+}
+
+@media screen and (max-width: 1000px) {
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .select-laptop {
+    bottom: 20%;
+    right: 68%;
+    width: 50%;
+    -webkit-transform: translate(50%, 5%);
+            transform: translate(50%, 5%);
+  }
+  .cover img {
+    height: 50%;
+    width: 60%;
+    display: block;
+  }
+  .small-circle,
+  .med-circle,
+  .big-circle {
+    opacity: 0.2;
+  }
+}
+/*# sourceMappingURL=LPPCSS.css.map */
